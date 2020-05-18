@@ -59,7 +59,7 @@ int contarLetras(char nombre[],char letra){
 -----------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
 
-[19:58, 5/18/2020] Leo Utn Sistemas: #include<stdio.h>
+#include<stdio.h>
 #include<string.h>
 
 typedef struct{
@@ -133,7 +133,7 @@ void ordenarNotebooks(Notebook* lista,int tamanio){
 	
 	
 }
-[19:58, 5/18/2020] Leo Utn Sistemas: void mostrarVector(Notebook list,int tamanio){
+ void mostrarVector(Notebook list,int tamanio){
 	int i;
 	for(i = 0;i < tamanio ; i++){
 			printf("\nID      PROCESADOR   MARCA      PRECIO ");
