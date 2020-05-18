@@ -1,0 +1,60 @@
+1. Crear una función llamada aplicarDescuento que reciba como parámetro el precio de un producto y devuelva 
+el valor del producto con un descuento del 5%. Realizar la llamada desde el main. 
+
+
+#include<stdio.h>
+
+float aplicarDescuento(float producto);
+
+int main(){
+	
+	
+	float producto = 100;
+	printf("\nPrecio con descuento : %.2f  ",aplicarDescuento(producto));
+	
+	return 0;
+}
+
+float aplicarDescuento(float producto){
+	
+	return producto - producto*0.05;
+	
+}
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+2. Crear una función que se llame contarCaracteres que reciba una cadena de caracteres 
+como primer parámetro y un carácter como segundo y devuelva la cantidad de veces que ese carácter aparece en la cadena
+
+#include<stdio.h>
+int contarLetras(char nombre[],char letra);
+
+
+int main(){
+	
+	char nombre[] ="Pele";
+	char letra = 'e';
+	contarLetras(nombre,letra);
+	printf("\n\n LA CANTIDAD DE VECES QUE APARECE LA LETRA %c EN LA PALABRA %s ES : %d \n",letra,nombre,contarLetras(nombre,'e'));
+	
+	return 0;
+}
+
+
+int contarLetras(char nombre[],char letra){
+	
+	int contador = 0;
+	int i = 0;
+	while(nombre[i]!='\0'){
+		
+		if(nombre[i]==letra){
+			contador ++;
+		}
+		i++;
+	}
+	
+	return contador;
+	
+}
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
